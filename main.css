@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    background: black;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.04rem;
+  }
+  .controls {
+    display: flex;
+    background-color:rgb(40, 0, 17);
+  }
+  .tool {
+    padding: 10px 20px;;
+    color: rgb(235, 235, 235);
+    display: flex;
+    align-items: baseline;
+    width: 50%;
+    justify-content: space-evenly;
+  }
+  button {
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 16px; 
+    background: rgb(235, 235, 235);
+    letter-spacing: 0.04rem;
+  }
+  .clear {
+    align-items: center;
+  }
