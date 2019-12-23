@@ -1,10 +1,9 @@
-    //variables
+    //Variables
     const canvas = document.querySelector('#canvas');
     const ctx = canvas.getContext('2d');
     const color = document.getElementById('colorPicker');
     const width = document.getElementById('lineWidth');
     const clearButton = document.getElementById('clear');
-    // const lineType = document.getElementById('lineType');
     
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -16,7 +15,7 @@
     let drawY = 0;
     let drawing = false;
 
-    //functions
+    //Functions
     function draw(e){
         if (!drawing) {
             return
@@ -37,21 +36,12 @@
         ctx.lineWidth = e.target.value;
     }
 
-    // function lineTypeChange(e){
-    //     console.log(e.target.value);
-    //     if (e.target.value === 1 || e.target.value === '1'){
-    //         ctx.lineCap = 'round';
-    //     } else {
-    //         ctx.lineCap = 'bevel';
-    //     }  
-    // }
-
     function clearCanvas(){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
 
 
-    //event listeners
+    //Event listeners
     canvas.addEventListener('mousedown', function(e){
         drawing = true;
         drawX = e.offsetX;
@@ -66,6 +56,5 @@
     });
     color.addEventListener('input', colorChange);
     width.addEventListener('input', lineChange);
-    // lineType.addEventListener('input', lineTypeChange);
     clearButton.addEventListener('click', clearCanvas);
 
